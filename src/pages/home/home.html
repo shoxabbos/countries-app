@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Mamlakatlar ro'yhati</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let c of countries" (click)="presentModal(c)">
+      <ion-avatar item-left>
+        <img src="{{c.flag}}">
+      </ion-avatar>
+      <h2>{{c.name}} - <small>{{c.nativeName}}</small></h2>
+      <p>Poytaxt: {{c.capital}}, Mintaqa: {{c.region}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

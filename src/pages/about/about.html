@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Batafsil </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <span ion-text color="primary" showWhen="ios">Orqaga</span>
+        <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img src="{{data.flag}}" />
+
+    <ion-grid>
+      <ion-row>
+        <ion-col col-5 class="key"> Haqiqiy nomi </ion-col>
+        <ion-col col-7 class="value"> {{data.nativeName}} </ion-col>
+
+        <ion-col col-5 class="key"> Nomi ingliz tilida </ion-col>
+        <ion-col col-7 class="value"> {{data.name}} </ion-col>
+
+        <ion-col col-5 class="key"> Poxtaxt </ion-col>
+        <ion-col col-7 class="value"> {{data.capital}} </ion-col>
+
+        <ion-col col-5 class="key"> Aholi </ion-col>
+        <ion-col col-7 class="value"> {{data.population}} </ion-col>
+
+        <ion-col col-5 class="key"> Maydoni </ion-col>
+        <ion-col col-7 class="value"> {{data.area}} kv km </ion-col>
+
+        <ion-col col-5 class="key"> Mintaqa </ion-col>
+        <ion-col col-7 class="value"> {{data.region}}, {{data.subregion}} </ion-col>
+
+        <ion-col col-5 class="key"> Alfa2 </ion-col>
+        <ion-col col-7 class="value"> {{data.alpha2Code}} </ion-col>
+
+        <ion-col col-5 class="key"> Alfa3 </ion-col>
+        <ion-col col-7 class="value"> {{data.alpha3Code}} </ion-col>
+
+        <ion-col col-5 class="key"> Raqam kod </ion-col>
+        <ion-col col-7 class="value"> {{data.numericCode}} </ion-col>
+
+        <ion-col col-5 class="key"> Vaqt zonasi </ion-col>
+        <ion-col col-7 class="value"> {{data.timezones.toString()}} </ion-col>
+
+        <ion-col col-5 class="key"> Domenlari </ion-col>
+        <ion-col col-7 class="value"> {{data.topLevelDomain.toString()}} </ion-col>
+
+        <ion-col col-5 class="key"> Qo'shni davlatlari </ion-col>
+        <ion-col col-7 class="value"> {{data.borders.toString()}} </ion-col>
+
+        <ion-col col-5 class="key"> Xalqaro telefon kodlari </ion-col>
+        <ion-col col-7 class="value"> {{data.callingCodes.toString()}} </ion-col>
+
+        <ion-col col-5 class="key"> Kordinatalari </ion-col>
+        <ion-col col-7 class="value"> {{data.latlng.toString()}} </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+
+  </ion-card>
+
+
+</ion-content>
+
+
+<style>
+  .col {
+    padding: 10px !important;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .key {
+
+  }
+
+  .value {
+    border-left: 1px solid #ddd;
+  }
+</style>
