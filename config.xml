@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="uz.shoxabbos.countries" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="uz.shoxabbos.countries" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Mamlakatlar</name>
     <description>Mamlakatlar statistikasi.</description>
     <author email="19941001@inbox.ru" href="http://qwerty.uz/">Shoxabbos</author>
@@ -83,4 +83,5 @@
     <plugin name="cordova-plugin-device" spec="^1.1.4" />
     <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
+    <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
 </widget>

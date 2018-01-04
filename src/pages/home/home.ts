@@ -37,7 +37,7 @@ export class HomePage {
   getCountries() {
     let loader = this.loadingCtrl.create({
       content: "Iltimos kuting...",
-      duration: 10000
+      duration: 30000
     });
     loader.present();
 

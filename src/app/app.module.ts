@@ -9,6 +9,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AdMobFree } from '@ionic-native/admob-free';
 
 import { Rest } from '../providers/rest';
+import {CacheModule} from "ionic-cache";
+import {Network} from "@ionic-native/network";
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { Rest } from '../providers/rest';
     IonicModule.forRoot(MyApp, {
       preloadModules: true
     }),
-    HttpModule
+    HttpModule,
+      CacheModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -30,7 +33,8 @@ import { Rest } from '../providers/rest';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     Rest,
-    AdMobFree
+    AdMobFree,
+    Network
   ]
 })
 export class AppModule {}
